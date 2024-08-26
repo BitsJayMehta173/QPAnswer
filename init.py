@@ -1,4 +1,5 @@
 import PyPDF2
+import pickle
 
 file_path = 'model.pdf'
 pages=[]
@@ -26,5 +27,7 @@ with open(file_path, 'rb') as file:
             else:
                 text+=page[i]
 
+with open('words.pkl', 'wb') as file:
+    pickle.dump(questions, file)
 
 
