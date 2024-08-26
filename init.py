@@ -1,6 +1,5 @@
 import PyPDF2
 
-# Open the PDF file
 file_path = 'model.pdf'
 pages=[]
 
